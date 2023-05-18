@@ -9,4 +9,7 @@ test('renders learn react link', () => {
     .closest('div')
 
   expect(headingContainer).toHaveStyleRule('background', 'blue')
+
+  console.log(headingContainer)
+
 });

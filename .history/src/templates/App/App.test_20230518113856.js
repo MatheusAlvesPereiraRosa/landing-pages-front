@@ -8,5 +8,12 @@ test('renders learn react link', () => {
   const headingContainer = screen.getByRole('heading', { name: 'Hello' })
     .closest('div')
 
+  expect(headingContainer).toHaveStyle({
+    background: 'blue'
+  })
+
   expect(headingContainer).toHaveStyleRule('background', 'blue')
+
+  console.log(headingContainer)
+
 });
