@@ -5,10 +5,10 @@ const titleSize = {
     font-size: ${theme.fonts.sizes.medium};
   `,
   medium: (theme) => css`
-    font-size: ${theme.fonts.sizes.large};
+    font-size: ${theme.fonts.sizes.large}
   `,
   big: (theme) => css`
-    font-size: ${theme.fonts.sizes.xlarge};
+    font-size: ${theme.fonts.sizes.xlarge}
   `,
   huge: (theme) => css`
     font-size: ${theme.fonts.sizes.xhuge};
@@ -16,9 +16,10 @@ const titleSize = {
   `,
 }
 
-const mediaFont = (theme) => css`
-  @media ${theme.media.lteMedium} {
+const mediaFont = (theme) => `css
+  @media (max-width: 768px) {
     font-size: ${theme.fonts.sizes.xlarge};
+    background: red;
   }
 `
 const titleCase = (uppercase) => css`

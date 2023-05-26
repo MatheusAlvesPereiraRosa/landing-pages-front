@@ -17,7 +17,7 @@ const titleSize = {
 }
 
 const mediaFont = (theme) => css`
-  @media ${theme.media.lteMedium} {
+  @media (max-width: 768px) {
     font-size: ${theme.fonts.sizes.xlarge};
   }
 `

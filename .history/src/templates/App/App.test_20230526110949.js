@@ -5,6 +5,10 @@ import { screen } from '@testing-library/react';
 
 describe('<Home />', () => {
   it('should render home', () => {
-    renderTheme(<App />)
+    re
   })
 })
+
+test('renders learn react link', () => {
+ renderTheme(<App />)
+});

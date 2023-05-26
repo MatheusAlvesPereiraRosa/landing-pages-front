@@ -5,7 +5,7 @@ export const Heading = ({
   children,
   colorDark = true,
   as = "h1",
-  size = "huge",
+  size = "big",
   uppercase = false
 }) => {
   return (
@@ -20,5 +20,5 @@ Heading.propTypes = {
   colorDark: P.bool,
   as: P.oneOf(["h1", "h2", "h3", "h4", "h5", "h6"]).isRequired,
   size: P.oneOf(["small", "medium", "big", "huge"]).isRequired,
-  uppercase: P.bool,
+  uppercase: P.bool.isRequired,
 };
