@@ -25,11 +25,11 @@ describe("<Heading />", () => {
     const { rerender } = renderTheme(<Heading size="huge">Texto</Heading>);
     const heading = screen.getByRole("heading", { name: "Texto" });
 
-    expect(screen.getByRole('heading', { name: 'texto'})).toHaveStyleRule(
-      'font-size',
+    expect(heading).toHaveStyleRule(
+      "font-size",
       theme.fonts.sizes.xlarge,
       {
-        media: theme.media.lteMedium, 
+        media: theme.media.lteMedium,
       }
     );
   });

@@ -26,7 +26,7 @@ describe("<Heading />", () => {
     const heading = screen.getByRole("heading", { name: "Texto" });
 
     expect(screen.getByRole('heading', { name: 'texto'})).toHaveStyleRule(
-      'font-size',
+      "font-size",
       theme.fonts.sizes.xlarge,
       {
         media: theme.media.lteMedium, 
